@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Write a JavaScript program to compute the sum of the two given Numbers. 
+        If the two values are same, then returns triple their sum.</h3>
+        <h1 id="result"></h1>
+        
+    
+</body>
+<script>
+    var x = prompt("Write a JavaScript program to compute the sum of the two given Number If the two values are same then returns triple their sum","enter value 1")
+    var y = prompt("Write a JavaScript program to compute the sum of the two given Number If the two values are same then returns triple their sum","enter value 2")
+
+
+    function sumTriple (x, y) {
+  if (x === y) {
+    return 3 * (x + y);
+    } 
+   else
+   {
+    return (Number(x) + Number( y));
+   }
+ }
+ var result = ("Answer: "+sumTriple(Number(x),Number(y)))
+ document.getElementById("result").innerText = result
+
+
+
+</script>
+</html>
